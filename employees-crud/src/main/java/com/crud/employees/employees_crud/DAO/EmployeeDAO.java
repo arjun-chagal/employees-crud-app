@@ -8,8 +8,11 @@ public interface EmployeeDAO {
 
     List<Employee> findAll();
 
-    //create, retrieve, update and delete one or multiple employees
-
+    //create (or update), retrieve,and delete one or multiple employees
     Employee save(Employee theEmployee);
+
+    Employee findById(int id);
+
+    void deleteById(int id);
 
 }
