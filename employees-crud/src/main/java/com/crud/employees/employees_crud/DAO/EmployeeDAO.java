@@ -7,4 +7,9 @@ import java.util.List;
 public interface EmployeeDAO {
 
     List<Employee> findAll();
+
+    //create, retrieve, update and delete one or multiple employees
+
+    Employee save(Employee theEmployee);
+
 }
